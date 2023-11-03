@@ -33,18 +33,25 @@ img {
   margin-bottom: 20px;
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .title {
-  font-size: 2rem; /* Using a rem unit for better scalability */
+  font-size: 5rem; /* Using a rem unit for better scalability */
   font-weight: bold;
   transition: 0.3s;
+
   color: rgb(177, 79, 118);
 }
 
 .artist {
-  font-size: 1.5rem; /* Using a rem unit for better scalability */
+  font-size: 2.2rem; /* Using a rem unit for better scalability */
   opacity: 0.68;
-  margin-top: 5px;
-  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  padding-bottom: 40px;
   color: rgb(242, 147, 185);
 }
 
@@ -55,7 +62,7 @@ img {
   padding: 15px 25px; /* Adjusted for better sizing */
   margin: 0 10px; /* Adjusted for better spacing */
   cursor: pointer;
-  font-size: 1.5rem; /* Using a rem unit for better scalability */
+  font-size: 5rem; /* Using a rem unit for better scalability */
 }
 
 .progress-container {
