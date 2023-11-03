@@ -22,7 +22,7 @@ body {
   background-color: rgba(253, 211, 228, 1);
   padding: 40px; /* Adjusted padding for desktop view */
   border-radius: 20px;
-  box-shadow: 0 20px 35px rgba(253, 211, 228, 0.6);
+  /* box-shadow: 0 20px 35px rgba(253, 211, 228, 0.6); */
   margin: 20px; /* Added margin for better separation */
 }
 
@@ -37,7 +37,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .title {
