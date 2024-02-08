@@ -12,7 +12,7 @@ const title = document.getElementById('title');
 // const durTime = document.querySelector('#durTime');
 
 // // Song titles
-const songs = ['4 od 10', 'Oblaki', 'Rollercoaster', 'Sladki problemi', 'Spontano dekle', 'Tam nekje', 'Vlak'];
+const songs = ['4 od 10', 'Belo sonce', 'Oblaki', 'Pridni fantje', 'Rollercoaster', 'Roze v laseh', 'Sladki problemi', 'Spontano dekle', 'Strah me je', 'Tam nekje', 'Vlak', 'Zajtrk v postelji'];
 
 // // Keep track of song
 let songIndex = 0;
