@@ -33,11 +33,11 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(179, 189, 208);
 }
 
 .artist {
-  color: rgb(255, 255, 255);
+  color: rgb(179, 189, 208);
 }
 
 .img-container {
@@ -58,7 +58,7 @@ body {
 
 .progress {
   height: 4px;
-  background: rgb(255, 255, 255);
+  background: rgb(179, 189, 208);
 }
 
 .navigation {
@@ -72,7 +72,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: rgb(179, 189, 208);
   font-size: 2rem;
 }
 
