@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background-color: rgb(173, 58, 58);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
