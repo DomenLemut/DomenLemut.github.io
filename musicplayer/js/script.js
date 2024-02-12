@@ -7,9 +7,8 @@ const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 
-
-const songs = ['4 od 10', 'Belo sonce', 'Oblaki', 'Pridni fantje', 'Rollercoaster', 'Roze v laseh', 
-'Sladki problemi', 'Spontano dekle', 'Strah me je', 'Tam nekje', 'Vlak', 'Zajtrk v postelji'];
+const songs = ['* o* 1*', 'Ob**i', '*ol*e*c****', '***e v ****', 
+'Sladki problemi', 'S******o dekle', 'T** n**j*', '*la*', '****rk * *ostelji'];
 
 songs.forEach((song) => {
 	var audio = new Audio();
@@ -87,6 +86,7 @@ playBtn.addEventListener('click', () => {
 	else playSong();
 });
 
+var i = 0;
 // Change song
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);

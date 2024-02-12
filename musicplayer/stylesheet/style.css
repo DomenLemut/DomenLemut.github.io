@@ -1,59 +1,137 @@
-/* Reset default margin and padding */
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
-}
-
-/* Ensure a consistent base font size */
-html {
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
   background-color: rgb(205, 205, 205);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 100px;
+  flex: 1;
 }
 
 .music-container {
-  text-align: center;
-  max-width: 400px; /* Adjust as needed */
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   padding: 20px;
-  border-radius: 10px;
   background-color: rgb(98, 97, 97);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.description-container {
+  height: 450px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) -5px 5px, rgba(0, 0, 0, 0.1) -10px 10px,
+    rgba(0, 0, 0, 0.05) -15px 15px;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+.timer-title {
+  font-family: "Dekko font";
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 10px;
+  font-weight: bolder;
   color: rgb(205, 205, 205);
+  padding: 10px;
 }
 
-.artist {
-  color: rgb(205, 205, 205);
-}
-
-.img-container {
+.boxes {
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.box {
+  background-color: rgb(216, 61, 61);
+  width: 80px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: rgb(216, 61, 61, 0.4) -5px 5px, rgba(216, 61, 61, 0.2) -10px 10px,
+    rgba(216, 61, 61, 0.1) -15px 15px;
+}
+
+.box-timer {
+  color: rgb(205, 205, 205);
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Dekko font";
+}
+
+.box-description {
+  font-size: 1.3rem;
 }
 
 .img-container img {
-  max-width: 100%;
+  width: 300px;
+  height: 300px;
   height: auto;
-  display: block;
   border-radius: 5px;
 }
 
 .progress-container {
+  width: 100%;
   margin: 20px 0;
   background-color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .progress {
@@ -62,10 +140,13 @@ body {
 }
 
 .navigation {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  align-content: center;
+  padding: 10px;
 }
 
 .action-btn {
@@ -76,19 +157,50 @@ body {
   font-size: 2rem;
 }
 
-/* Media query for responsiveness */
-@media screen and (max-width: 600px) {
-  .music-container {
-    max-width: 90%;
+.link-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 50px;
+}
+
+.btn {
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-image {
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
   }
 }
 
-#fullscreen-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Ensure the video stays behind other content */
+body {
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    rgb(205, 205, 205),
+    #686a6b,
+    #5c5c5c
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
