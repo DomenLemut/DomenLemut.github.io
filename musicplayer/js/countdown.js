@@ -4,7 +4,7 @@ const h = document.getElementById('hours');
 const m = document.getElementById('minutes');
 const s = document.getElementById('seconds');
 
-var countDownDate = new Date("Mar 23, 2024 20:00:00").getTime();
+var countDownDate = new Date("Apr 15, 2024 20:00:00").getTime();
 
 function updateCountdown() {
     var timeDifference = countDownDate - new Date().getTime();
@@ -22,7 +22,6 @@ function updateCountdown() {
         // if(seconds < 10) seconds = "0" + seconds;
         // if(minutes < 10) minutes = "0" + minutes;
         // var string = `${days}:${hours}:${minutes}:${seconds}`;
-        //tim.innerText = string;
     } else {
         console.log("Countdown expired");
         clearTimeout(timer);
@@ -31,5 +30,5 @@ function updateCountdown() {
 
 updateCountdown();
 
-// Update the countdown every second
+// Update the countdown 100ms
 var timer = setInterval(updateCountdown, 100);

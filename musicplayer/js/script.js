@@ -8,7 +8,7 @@ const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 
 const songs = ['* o* 1*', 'Ob**i', '*ol*e*c****', '***e v ****', 
-'Sladki problemi', 'S******o dekle', 'T** n**j*', '*la*', '****rk * *ostelji'];
+'Sladki problemi', 'S******o dekle', 'T** n**j*', '*la*', '***rk * *ostelji'];
 
 songs.forEach((song) => {
 	var audio = new Audio();
